@@ -7,7 +7,7 @@ export default function Home() {
       <p className="text-gray-600 mt-2">Learning Software Development</p>
       <div className="mt-4">
         <Image
-          src="/profile.jpg"
+          src="/images/profile.jpg"
           alt="Profile Picture"
           width={150}
           height={150}

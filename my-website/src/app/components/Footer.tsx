@@ -4,7 +4,7 @@ export default function Footer() {
       <p>&copy; {new Date().getFullYear()} Arteen Mohammadi.</p>
       <div className="mt-2 space-x-4">
         <a
-          href="https://github.com/yourname"
+          href="https://github.com/ArteenM"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:underline"
@@ -12,7 +12,7 @@ export default function Footer() {
           GitHub
         </a>
         <a
-          href="https://linkedin.com/in/yourname"
+          href="linkedin.com/in/arteen-mohammadi-77977631a"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:underline"
