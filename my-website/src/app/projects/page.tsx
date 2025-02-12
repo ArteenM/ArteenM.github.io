@@ -1,13 +1,20 @@
 export default function Projects() {
   const projects = [
-    { name: "Project One", link: "https://github.com/yourname/project1" },
-    { name: "Project Two", link: "https://github.com/yourname/project2" },
+    {
+      name: "Travel Helper",
+      link: "https://github.com",
+    },
+    { name: "Project Two", link: "https://github.com" },
+    {
+      name: "Project Three",
+      link: "https://github.com",
+    },
   ];
 
   return (
-    <div className="py-10 text-center">
-      <h1 className="text-3xl font-bold">Projects</h1>
-      <ul className="mt-6 space-y-4">
+    <div className="text-xl py-10 text-center">
+      <h1 className="text-5xl font-bold">Projects</h1>
+      <ul className="mt-24 space-y-10">
         {projects.map((project, index) => (
           <li key={index}>
             <a
