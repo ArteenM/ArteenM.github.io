@@ -5,7 +5,7 @@ export default function Navbar() {
     <nav className="bg-blue-600 text-white p-4">
       <div className="container mx-auto flex justify-between">
         <Link href="/" className="text-xl font-bold">
-          MyPortfolio
+          arteenmo.me
         </Link>
         <div className="space-x-4">
           <Link href="/about" className="hover:underline">
