@@ -19,6 +19,14 @@ export default function Footer() {
         >
           LinkedIn
         </a>
+        <a
+          href="mailto:arteenmo1@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
+        >
+          Email
+        </a>
       </div>
     </footer>
   );

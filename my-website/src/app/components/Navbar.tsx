@@ -2,9 +2,13 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="bg-blue-600 text-white p-4">
+    <nav className="bg-blue-600 text-white p-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between">
-        <Link href="/" className="text-xl font-bold">
+        <Link
+          href="/"
+          aria-label="Go to homepage"
+          className="text-xl font-bold"
+        >
           arteenmo.me
         </Link>
         <div className="space-x-4">

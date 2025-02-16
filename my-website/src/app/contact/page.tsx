@@ -29,6 +29,13 @@ export default function Contact() {
         >
           Email
         </a>
+        <a
+          href="http://https://x.com/arteenmo1"
+          target="_blank"
+          className="text-gray-500 hover:text-gray-200"
+        >
+          Twitter
+        </a>
       </div>
 
       {/* Contact Form */}

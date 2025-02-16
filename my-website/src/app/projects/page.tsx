@@ -4,17 +4,17 @@ export default function Projects() {
     {
       name: "Travel Helper",
       link: "https://google.com",
-      image: "/images/tempImage.jpg",
+      image: "/images/tempImage.jpg", //This is final project, obviously hasn't been finished yet.
     },
     {
       name: "Portfolio",
       link: "/",
-      image: "/images/AMLogo.png",
+      image: "/images/AMLogo.png", // Portfolio website.
     },
     {
       name: "Placeholder",
       link: "https://github.com",
-      image: "Placeholder.jpg",
+      image: "/images/Placeholder.png", // Placeholder for whenever a third project is done.
     },
   ];
 
