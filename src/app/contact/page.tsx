@@ -30,7 +30,7 @@ export default function Contact() {
           Email
         </a>
         <a
-          href="http://https://x.com/arteenmo1"
+          href="https://https://x.com/arteenmo1"
           target="_blank"
           className="text-gray-500 hover:text-gray-200"
         >

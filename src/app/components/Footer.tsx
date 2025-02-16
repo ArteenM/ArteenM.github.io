@@ -12,7 +12,7 @@ export default function Footer() {
           GitHub
         </a>
         <a
-          href="linkedin.com/in/arteen-mohammadi-77977631a/"
+          href="http://linkedin.com/in/arteen-mohammadi-77977631a/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:underline"
