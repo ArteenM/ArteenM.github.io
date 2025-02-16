@@ -10,21 +10,21 @@ export default function Contact() {
       {/* Social Links */}
       <div className="flex justify-center space-x-6 mb-6">
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/ArteenM"
           target="_blank"
           className="text-gray-500 hover:text-gray-200"
         >
           GitHub
         </a>
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="https://linkedin.com/in/arteen-mohammadi-77977631a"
           target="_blank"
           className="text-gray-500 hover:text-gray-200"
         >
           LinkedIn
         </a>
         <a
-          href="mailto:your.email@example.com"
+          href="mailto:arteenmo1@gmail.com"
           className="text-gray-500 hover:text-gray-200"
         >
           Email
@@ -32,11 +32,16 @@ export default function Contact() {
       </div>
 
       {/* Contact Form */}
-      <form className="bg-gray-100 p-6 rounded-lg shadow-md">
+      <form
+        action="https://formsubmit.co/3c68c8d96be3c88ec4b16e4e24b0d358"
+        method="POST"
+        className="bg-gray-100 p-6 rounded-lg shadow-md"
+      >
         <div className="mb-4">
           <label className="block text-gray-700 font-medium mb-2">Name</label>
           <input
             type="text"
+            name="name"
             className="w-full px-4 py-2 border text-black border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Your Name"
             required
@@ -47,6 +52,7 @@ export default function Contact() {
           <label className="block text-gray-700 font-medium mb-2">Email</label>
           <input
             type="email"
+            name="email"
             className="w-full px-4 py-2 text-black border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Your Email"
             required
@@ -58,6 +64,7 @@ export default function Contact() {
             Message
           </label>
           <textarea
+            name="message"
             className="w-full px-4 py-2 text-black border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Your Message"
             rows={4}
