@@ -12,9 +12,9 @@ export default function Projects() {
       image: "/images/AMLogo.png", // Portfolio website.
     },
     {
-      name: "Placeholder",
-      link: "https://github.com",
-      image: "/images/Placeholder.png", // Placeholder for whenever a third project is done.
+      name: "Cloud Computing",
+      link: "https://reddit.com",
+      image: "/images/project.jpg", // Placeholder for whenever a third project is done.
     },
   ];
 
