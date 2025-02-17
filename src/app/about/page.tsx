@@ -17,8 +17,8 @@ export default function About() {
       {/* about section */}
       <h1 className="text-4xl font-bold mb-4">About Me</h1>
       <p className="text-gray-600 text-lg leading-relaxed">
-        Hi, my name is Arteen Mohammadi! I&apos;m an programmer with experience
-        in web development, game engines, and OOP.
+        Hi, my name is Arteen Mohammadi! I&apos;m an avid programmer with
+        experience in web development, game engines, and OOP.
       </p>
 
       {/* skills section */}
@@ -89,7 +89,6 @@ export default function About() {
             gaming, watching sports, swimming, and working with
             microcontrollers.
           </span>
-          I&apos;m always open to collaborating on interesting projects!
         </p>
       </div>
 
