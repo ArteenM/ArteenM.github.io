@@ -14,7 +14,7 @@ export default function Projects() {
     {
       name: "Cloud Computing",
       link: "https://reddit.com",
-      image: "/images/project.jpg", // Placeholder for whenever a third project is done.
+      image: "/images/project3.jpg", // Placeholder for whenever a third project is done.
     },
   ];
 
