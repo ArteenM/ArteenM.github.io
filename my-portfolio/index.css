@@ -58,6 +58,9 @@ body{
   padding:1.25rem;
   box-shadow:0 4px 18px rgba(12,18,31,0.04);
   margin-top:1.25rem;
+}
+
+.card_h{
   text-align: center;
 }
 
