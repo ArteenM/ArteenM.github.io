@@ -21,6 +21,10 @@ body{
   line-height:1.5;
 }
 
+.center{
+  text-align: center;
+}
+
 .container{
   max-width:var(--max);
   margin:0 auto;
@@ -30,7 +34,6 @@ body{
 /* Header */
 .site-header{
   background:linear-gradient(180deg, rgba(37,99,235,0.06), transparent);
-  border-bottom:1px solid rgba(15,23,42,0.04);
 }
 .header-inner{
   display:flex;
@@ -60,9 +63,6 @@ body{
   margin-top:1.25rem;
 }
 
-.card_h{
-  text-align: center;
-}
 
 /* Projects */
 .projects-grid{
