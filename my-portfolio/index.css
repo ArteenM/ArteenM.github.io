@@ -1,0 +1,100 @@
+:root{
+  --bg:#f7f8fb;
+  --card:#ffffff;
+  --accent:#2563eb;
+  --muted:#6b7280;
+  --radius:10px;
+  --max:1000px;
+  --gap:1rem;
+  --container-padding:1rem;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:#111827;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+}
+
+.container{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:var(--container-padding);
+}
+
+/* Header */
+.site-header{
+  background:linear-gradient(180deg, rgba(37,99,235,0.06), transparent);
+  border-bottom:1px solid rgba(15,23,42,0.04);
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:var(--gap);
+  padding:1rem 0;
+}
+.site-title a{color:var(--accent); text-decoration:none}
+.nav{list-style:none; margin:0; padding:0; display:flex; gap:0.5rem}
+.nav a{
+  display:inline-block;
+  padding:0.5rem 0.75rem;
+  color:var(--muted);
+  text-decoration:none;
+  border-radius:6px;
+}
+.nav a:hover{color:var(--accent); background:rgba(37,99,235,0.06)}
+.nav a.active{color:var(--accent); font-weight:600; background:rgba(37,99,235,0.09)}
+
+/* Main cards */
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:1.25rem;
+  box-shadow:0 4px 18px rgba(12,18,31,0.04);
+  margin-top:1.25rem;
+}
+
+/* Projects */
+.projects-grid{list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem}
+.project h3{margin-top:0}
+.btn{
+  display:inline-block;
+  background:var(--accent);
+  color:white;
+  padding:0.5rem 0.75rem;
+  border-radius:8px;
+  text-decoration:none;
+}
+.btn:hover{opacity:0.95}
+
+/* Contact form */
+.contact-form{display:grid; gap:0.75rem}
+.contact-form label{font-size:0.9rem; color:var(--muted)}
+.contact-form input,
+.contact-form textarea{
+  padding:0.6rem;
+  border-radius:8px;
+  border:1px solid rgba(15,23,42,0.08);
+  font:inherit;
+  resize:vertical;
+}
+.form-status{margin-top:0.5rem; color:var(--muted)}
+
+/* Utilities */
+.skills{display:flex; gap:0.5rem; flex-wrap:wrap; padding:0; list-style:none}
+.skills li{background:rgba(15,23,42,0.04); padding:0.25rem 0.5rem; border-radius:6px; font-size:0.9rem}
+
+/* Footer */
+.site-footer{padding:1rem 0; color:var(--muted); font-size:0.9rem; text-align:center; margin-top:1.25rem}
+
+/* Responsive tweaks */
+@media (max-width:640px){
+  .header-inner{flex-direction:column; align-items:flex-start}
+  .nav{width:100%; justify-content:space-between}
+}
