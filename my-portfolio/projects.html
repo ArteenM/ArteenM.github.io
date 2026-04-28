@@ -1,66 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Projects — My Portfolio</title>
-    <link rel="stylesheet" href="index.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Projects by Arteen Mohammadi across embedded systems, software engineering, machine learning, and cybersecurity." />
+  <title>Projects | Arteen Mohammadi</title>
+  <link rel="stylesheet" href="index.css" />
 </head>
-
 <body>
-    <header class="site-header">
-        <div class="container header-inner">
-            <h1 class="site-title"><a href="index.html">My Portfolio</a></h1>
-            <nav>
-                <ul class="nav">
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title"><a href="index.html">Arteen Mohammadi <span>Portfolio</span></a></h1>
+      <nav aria-label="Primary navigation">
+        <ul class="nav">
+          <li><a href="index.html">About</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main class="container">
-        <section id="projects" class="card">
-            <h1 class="center">Projects</h1>
+  <main id="main-content" class="container">
+    <section class="page-intro section">
+      <div class="eyebrow">Selected projects</div>
+      <h1>Recent work across embedded systems, software, data, and security.</h1>
+      <p>Most of these started as ways to learn a tool or concept more deeply, then grew into projects substantial enough to put on a resume. I tend to enjoy projects that force me to debug real problems rather than just implement the happy path.</p>
+    </section>
 
-            <ul class="projects-grid">
-                <li class="project">
-                    <h3>P2P File-Sharing</h3>
-                    <p>An AI-powered web app that predicts NBA game outcomes using player stats, team data, and real-time updates.
-                    Built with Django, Python, and React, it delivers interactive win probabilities and analytics for any matchup.</p>
-                    <p><a href="https://github.com/ArteenM/File-Sharing" target="_blank" class="btn">View details</a></p>
-                </li>
+    <section class="section">
+      <div class="project-list">
+        <article class="project-item">
+          <div>
+            <div class="project-meta">
+              <h2>STM32 IMU Firmware</h2>
+              <span>STM32 • C • SPI • UART • Embedded Systems</span>
+            </div>
+            <p class="summary">Firmware for an STM32-based IMU interface, including SPI bring-up, register-level driver integration, interrupt-driven data acquisition, and UART streaming for live validation.</p>
+          </div>
+          <div class="project-links">
+            <a class="project-link" href="project-details/project-stm32-imu.html">Read more</a>
+          </div>
+        </article>
 
-                <li class="project">
-                    <h3>NBA AI Model</h3>
-                    <p>A secure peer-to-peer file-sharing platform with encrypted communication and JWT-based authentication.
-                    Built with React, TypeScript, and Node.js, it enables fast, private file transfers between users.</p>
-                    <p><a href="https://github.com/ArteenM/nba-ai/tree/backend" target="_blank"class="btn">View details</a></p>
-                </li>
+        <article class="project-item">
+          <div>
+            <div class="project-meta">
+              <h2>P2P File-Sharing Application</h2>
+              <span>React • TypeScript • Node.js • Express • SQL • WebRTC</span>
+            </div>
+            <p class="summary">Secure file-sharing application with authenticated peer-to-peer transfers, encrypted communication, robust testing, and performance tuning for large file transfers.</p>
+          </div>
+          <div class="project-links">
+            <a class="project-link" href="project-details/project-p2p.html">Read more</a>
+            <a class="project-link secondary" target="_blank" rel="noreferrer" href="https://github.com/ArteenM/File-Sharing">GitHub</a>
+          </div>
+        </article>
 
-                <li class="project">
-                    <h3>Home Lab</h3>
-                    <p>Set up an enterprise-grade security lab using Wazuh SIEM for threat detection, log aggregation, and event monitoring.
-                    Configured an Active Directory domain with user authentication, group policies, and centralized identity management.</p>
-                </li>
-            </ul>
-        </section>
-    </main>
+        <article class="project-item">
+          <div>
+            <div class="project-meta">
+              <h2>HoopPredict</h2>
+              <span>Python • Django • React • Scikit-learn</span>
+            </div>
+            <p class="summary">NBA analytics platform with ETL pipelines, feature engineering, model training, and a full-stack interface for presenting game predictions and supporting data.</p>
+          </div>
+          <div class="project-links">
+            <a class="project-link" href="project-details/project-hooppredict.html">Read more</a>
+            <a class="project-link secondary" target="_blank" rel="noreferrer" href="https://github.com/ArteenM/nba-ai/tree/backend">GitHub</a>
+          </div>
+        </article>
 
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <div class="copyright">© 2025 Arteen Mohammadi</div>
-            <nav>
-                <ul class="footer-nav">
-                    <li><a href="https://www.linkedin.com/in/arteen-mohammadi-a58213389/">LinkedIn</a></li>
-                    <li><a href="https://github.com/ArteenM">Github</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
+        <article class="project-item">
+          <div>
+            <div class="project-meta">
+              <h2>Active Directory Homelab</h2>
+              <span>Wazuh • Active Directory • Linux • Bash • VirtualBox</span>
+            </div>
+            <p class="summary">Homelab for access control, logging, vulnerability monitoring, and security investigation using Active Directory and Wazuh in a multi-machine environment.</p>
+          </div>
+          <div class="project-links">
+            <a class="project-link" href="project-details/project-homelab.html">Read more</a>
+          </div>
+        </article>
+
+        <article class="project-item">
+          <div>
+            <div class="project-meta">
+              <h2>Network Packet Sniffer</h2>
+              <span>C • Linux • TCP/IP • HTTP • DNS</span>
+            </div>
+            <p class="summary">Low-level packet analysis tool for inspecting traffic, parsing raw headers, and studying communication patterns to support debugging and protocol investigation.</p>
+          </div>
+          <div class="project-links">
+            <a class="project-link" href="project-details/project-sniffer.html">Read more</a>
+          </div>
+        </article>
+
+        <article class="project-item">
+          <div>
+            <div class="project-meta">
+              <h2>Job Application Tracker Extension</h2>
+              <span>JavaScript • Chrome APIs • DOM Parsing • Chrome Storage</span>
+            </div>
+            <p class="summary">Browser extension for extracting, storing, and organizing job application data from sites like LinkedIn and Indeed to reduce repetitive manual tracking.</p>
+          </div>
+          <div class="project-links">
+            <a class="project-link" href="project-details/project-tracker.html">Read more</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="copyright">© 2026 Arteen Mohammadi</div>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-nav">
+          <li><a href="https://github.com/ArteenM" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/arteen-mohammadi-a58213389/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="STM32 IMU Firmware project by Arteen Mohammadi." />
+  <title>STM32 IMU Firmware | Arteen Mohammadi</title>
+  <link rel="stylesheet" href="../index.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title"><a href="../index.html">Arteen Mohammadi <span>Portfolio</span></a></h1>
+      <nav aria-label="Primary navigation">
+        <ul class="nav">
+          <li><a href="../index.html">About</a></li>
+          <li><a href="../projects.html" class="active">Projects</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+    <section class="project-header">
+      <div class="eyebrow">Embedded systems</div>
+      <h1>STM32 IMU Firmware</h1>
+      <p>Firmware project centered on SPI communication, driver integration, interrupt-driven data capture, and live UART monitoring for an ISM330DHCX IMU.</p>
+      <ul class="project-meta">
+        <li>STM32</li><li>C</li><li>SPI</li><li>UART</li><li>EXTI/NVIC</li>
+      </ul>
+    </section>
+
+    <section class="detail-grid">
+      <article>
+        <h2>What I built</h2>
+        <ul>
+          <li>Implemented SPI communication on STM32 for reliable register-level control and sensor data acquisition.</li><li>Designed a hardware abstraction layer using <code>stmdev_ctx_t</code> to separate platform communication from sensor logic.</li><li>Debugged bring-up issues involving chip-select routing, SPI mode, data width, and clock configuration.</li><li>Implemented interrupt-driven acquisition with EXTI and NVIC to eliminate polling for data-ready signals.</li><li>Built a real-time UART pipeline for live 3-axis acceleration monitoring and validation.</li>
+        </ul>
+
+        <h2>What I learned</h2>
+        <ul>
+          <li>How low-level firmware debugging usually involves both code and hardware assumptions being wrong at the same time.</li><li>How register-level drivers can be structured cleanly without relying entirely on board support packages.</li><li>Why interrupt-driven design matters for responsiveness and efficiency in embedded systems.</li>
+        </ul>
+      </article>
+
+      <aside>
+        <h3>Why it matters</h3>
+        <p>This is the project that best captures my interest in firmware work. It forced me to deal with hardware behavior, driver structure, and real debugging rather than only writing application logic.</p>
+        <div class="button-row">
+          <a class="btn-secondary" href="../projects.html">Back to projects</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="copyright">© 2026 Arteen Mohammadi</div>
+    </div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>
