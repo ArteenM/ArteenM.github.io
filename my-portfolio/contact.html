@@ -1,61 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Contact — My Portfolio</title>
-    <link rel="stylesheet" href="index.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact Arteen Mohammadi." />
+  <title>Contact | Arteen Mohammadi</title>
+  <link rel="stylesheet" href="index.css" />
 </head>
-
 <body>
-    <header class="site-header">
-        <div class="container header-inner">
-            <h1 class="site-title"><a href="index.html">My Portfolio</a></h1>
-            <nav>
-                <ul class="nav">
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title"><a href="index.html">Arteen Mohammadi <span>Portfolio</span></a></h1>
+      <nav aria-label="Primary navigation">
+        <ul class="nav">
+          <li><a href="index.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+    <section class="page-intro section">
+      <div class="eyebrow">Get in touch</div>
+      <h1>Contact</h1>
+      <p>If you want to talk about internships, projects, or potential collaboration, feel free to reach out.</p>
+    </section>
+
+    <section class="section contact-grid">
+      <div>
+        <form action="https://formsubmit.co/3c68c8d96be3c88ec4b16e4e24b0d358" method="POST" id="contact-form" class="contact-form" novalidate>
+          <input type="hidden" name="_subject" value="Portfolio Contact Form Submission" />
+          <input type="hidden" name="_captcha" value="false" />
+
+          <label for="name">Name</label>
+          <input id="name" name="name" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="7" placeholder="What are you reaching out about?" required></textarea>
+
+          <div class="button-row">
+            <button type="submit" class="btn">Send message</button>
+          </div>
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <aside class="contact-card">
+        <h2>Elsewhere</h2>
+        <ul class="meta-list">
+          <li><strong>Email</strong><a class="inline-link" href="mailto:ama345@sfu.ca">ama345@sfu.ca</a></li>
+          <li><strong>GitHub</strong><a class="inline-link" href="https://github.com/ArteenM" target="_blank" rel="noreferrer">github.com/ArteenM</a></li>
+          <li><strong>LinkedIn</strong><a class="inline-link" href="https://www.linkedin.com/in/arteen-mohammadi-a58213389/" target="_blank" rel="noreferrer">linkedin.com/in/arteen-mohammadi-a58213389</a></li>
+          <li><strong>Location</strong>Coquitlam, British Columbia</li>
+        </ul>
+        <div class="note-box">
+          I am primarily looking for software engineering, cybersecurity, and embedded systems opportunities, but I am always open to hearing about thoughtful technical work.
         </div>
-    </header>
+      </aside>
+    </section>
+  </main>
 
-    <main class="container">
-        <section id="contact" class="card">
-            <h2 class="center">Contact Me</h2>
-
-            <form action="https://formsubmit.co/3c68c8d96be3c88ec4b16e4e24b0d358" 
-            method="POST" id="contact-form" class="contact-form" novalidate>
-                <label for="name">Name</label>
-                <input id="name" name="name" required />
-
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" required />
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="6" required></textarea>
-
-                <button type="submit" class="btn">Send</button>
-                <p id="form-status" class="form-status" aria-live="polite"></p>
-            </form>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <div class="copyright">© 2025 Arteen Mohammadi</div>
-            <nav>
-                <ul class="footer-nav">
-                    <li><a href="https://www.linkedin.com/in/arteen-mohammadi-a58213389/">LinkedIn</a></li>
-                    <li><a href="https://github.com/ArteenM">Github</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="copyright">© 2026 Arteen Mohammadi</div>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-nav">
+          <li><a href="https://github.com/ArteenM" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/arteen-mohammadi-a58213389/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          <li><a href="index.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
-
 </html>

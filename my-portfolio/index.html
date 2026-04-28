@@ -1,82 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>About — My Portfolio</title>
-    <link rel="stylesheet" href="index.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Arteen Mohammadi is a Computing Science student at Simon Fraser University focused on software, cybersecurity, and embedded systems." />
+  <title>Arteen Mohammadi</title>
+  <link rel="stylesheet" href="index.css" />
 </head>
-
 <body>
-    <header class="site-header">
-        <div class="container header-inner">
-            <h1 class="site-title"><a href="index.html">My Portfolio</a></h1>
-            <nav>
-                <ul class="nav">
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title"><a href="index.html">Arteen Mohammadi <span>Portfolio</span></a></h1>
+      <nav aria-label="Primary navigation">
+        <ul class="nav">
+          <li><a href="index.html" class="active">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow">Computing Science • Simon Fraser University • Expected June 2028</div>
+        <h1>Software, security, and embedded systems work with a practical bent.</h1>
+        <p class="lead">
+          I am Arteen Mohammadi, a Computing Science student based in Coquitlam, British Columbia. I like projects that make me understand systems more deeply, whether that means building secure software, debugging low-level firmware, or turning messy data into something useful.
+        </p>
+        <p>
+          Lately, most of my work has fallen into three lanes: full-stack software development, cybersecurity and systems tooling, and embedded programming with STM32. I am especially interested in internships where I can keep building technical depth while working on problems that matter outside the classroom.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="projects.html">Browse selected work</a>
+          <a class="btn-secondary" href="Resume-2025.pdf" download>Download resume</a>
         </div>
-    </header>
+      </div>
 
-    <main class="container">
-        <section id="about" class="card">
-            <h2>About Me</h2>
-            <p> Hello, my name is Arteen Mohammadi. I am a computer science student at Simon Fraser University with
-                an interest in Software Engineering and Cybersecurity.
-            </p>
+      <aside class="hero-aside">
+        <ul class="inline-list">
+          <li>
+            <strong>Current interests</strong>
+            Software engineering, cybersecurity, firmware, and systems-oriented roles.
+          </li>
+          <li>
+            <strong>Core tools</strong>
+            Python, C/C++, React, Node.js, Linux, STM32, Wazuh, SQL.
+          </li>
+          <li>
+            <strong>What I value</strong>
+            Clear documentation, reliable systems, thoughtful debugging, and steady improvement.
+          </li>
+        </ul>
+      </aside>
+    </section>
 
-            <p>
-                In my spare time, I enjoy Chess, Basketball, and creating new projects to learn new technologies.
-                I am also an avid reader of tech blogs and cybersecurity news to stay updated with the latest trends in
-                the industry.
-            </p>
-
-            <button class="resume-button">
-                <a
-                href="Resume-2025.pdf"
-                download
-                >
-                Download Resume (PDF)
-                </a>
-            </button>
-
-            <h3>Skills</h3>
-            <ul class="skills">
-                <li>HTML &amp; CSS</li>
-                <li>JavaScript</li>
-                <li>TypeScript</li>
-                <li>React</li>
-                <li>Python</li>
-                <li>Django</li>
-                <li>Version control (git)</li>
-                <li>AWS</li>
-                <li>Linux</li>
-                <li>Wazuh</li>
-                <li>Wireshark</li>
-            </ul>
-            <h3>Certifications</h3>
-            <ul class="skills">
-                <li>Google Cybersecurity</li>
-                <li>CompTIA Security+ (December 2025)</li>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <div class="copyright">© 2025 Arteen Mohammadi</div>
-            <nav>
-                <ul class="footer-nav">
-                    <li><a href="https://www.linkedin.com/in/arteen-mohammadi-a58213389/">LinkedIn</a></li>
-                    <li><a href="https://github.com/ArteenM">Github</a></li>
-                </ul>
-            </nav>
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <h2>About</h2>
+          <p>A little more context on what I build and how I work.</p>
         </div>
-    </footer>
-    <script src="script.js"></script>
+      </div>
+
+      <div class="text-columns">
+        <div>
+          <p>
+            My recent projects include a secure peer-to-peer file-sharing system, an NBA analytics platform with machine learning pipelines, an Active Directory homelab with security monitoring, a C-based packet sniffer, and an STM32 firmware project for SPI-based IMU data acquisition.
+          </p>
+          <p>
+            Outside of school, I work as an Aquatic Leader with the City of Coquitlam. That role has strengthened my communication, vigilance, and ability to stay composed in fast-moving situations. Those habits carry over directly into how I debug, document, and collaborate on technical work.
+          </p>
+        </div>
+
+        <div class="skills-plain">
+          <div>
+            <strong>Languages</strong>
+            Python, C, C++, JavaScript, TypeScript, SQL
+          </div>
+          <div>
+            <strong>Frameworks & tools</strong>
+            React, Node.js, Express, Django, Git/GitHub, Linux
+          </div>
+          <div>
+            <strong>Security & systems</strong>
+            Wazuh, Active Directory, packet analysis, STM32, SPI, UART
+          </div>
+          <div>
+            <strong>Certifications</strong>
+            Google Cybersecurity Certificate, CompTIA Network+ (scheduled), CompTIA Security+ (scheduled)
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <h2>Selected work</h2>
+          <p>The projects that best represent the direction I am moving in.</p>
+        </div>
+        <a class="inline-link" href="projects.html">All projects</a>
+      </div>
+
+      <div class="project-list">
+        <article class="project-item">
+          <div>
+            <div class="project-meta">
+              <h2>STM32 IMU Firmware</h2>
+              <span>STM32 • C • SPI • UART</span>
+            </div>
+            <p class="summary">Embedded firmware project focused on SPI bring-up, interrupt-driven data acquisition, and live UART streaming from an ISM330DHCX IMU.</p>
+          </div>
+          <div class="project-links">
+            <a class="project-link" href="project-details/project-stm32-imu.html">Case study</a>
+          </div>
+        </article>
+
+        <article class="project-item">
+          <div>
+            <div class="project-meta">
+              <h2>P2P File-Sharing Application</h2>
+              <span>React • TypeScript • Node.js • WebRTC</span>
+            </div>
+            <p class="summary">Secure full-stack file transfer system with encrypted communication, authentication, testing, and performance optimization for large transfers.</p>
+          </div>
+          <div class="project-links">
+            <a class="project-link" href="project-details/project-p2p.html">Case study</a>
+            <a class="project-link secondary" target="_blank" rel="noreferrer" href="https://github.com/ArteenM/File-Sharing">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-item">
+          <div>
+            <div class="project-meta">
+              <h2>HoopPredict</h2>
+              <span>Python • Django • React • Scikit-learn</span>
+            </div>
+            <p class="summary">Analytics platform with ETL pipelines, feature engineering, and machine learning workflows for NBA prediction and matchup analysis.</p>
+          </div>
+          <div class="project-links">
+            <a class="project-link" href="project-details/project-hooppredict.html">Case study</a>
+            <a class="project-link secondary" target="_blank" rel="noreferrer" href="https://github.com/ArteenM/nba-ai/tree/backend">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section grid-2">
+      <div>
+        <div class="section-heading">
+          <div>
+            <h2>Experience</h2>
+            <p>Work that shaped how I handle responsibility and communication.</p>
+          </div>
+        </div>
+        <p><strong>Aquatic Leader, City of Coquitlam</strong><br />October 2023 – Present</p>
+        <p>
+          In this role I work in a public-facing, safety-critical environment where attention to detail, teamwork, and clear communication matter every day. It has made me better at responding calmly under pressure, documenting incidents accurately, and staying dependable when situations change quickly.
+        </p>
+      </div>
+
+      <aside class="sidebar-card">
+        <h3>What I am looking for</h3>
+        <ul class="meta-list">
+          <li><strong>Software engineering</strong>Backend, full-stack, data, or tools work where I can ship practical systems.</li>
+          <li><strong>Cybersecurity</strong>Security monitoring, secure systems, SOC-style analysis, or engineering-adjacent internships.</li>
+          <li><strong>Embedded systems</strong>Firmware, debugging, and low-level roles involving C, Linux, and hardware interaction.</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="copyright">© 2026 Arteen Mohammadi</div>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-nav">
+          <li><a href="https://github.com/ArteenM" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/arteen-mohammadi-a58213389/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          <li><a href="mailto:ama345@sfu.ca">Email</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
-
 </html>
