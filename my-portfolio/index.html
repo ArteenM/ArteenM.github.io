@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Arteen Mohammadi is a Computing Science student at Simon Fraser University focused on software, cybersecurity, and embedded systems." />
   <title>Arteen Mohammadi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css" />
 </head>
 <body>
@@ -24,18 +27,20 @@
 
   <main id="main-content" class="container">
     <section class="hero">
+      <svg class="hero-court" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+        <circle cx="340" cy="200" r="140"></circle>
+        <path d="M 340 60 A 140 140 0 0 1 340 340"></path>
+      </svg>
       <div class="hero-copy">
-        <div class="eyebrow">Computing Science • Simon Fraser University • Expected June 2028</div>
-        <h1>Software, security, and embedded systems work with a practical bent.</h1>
-        <p class="lead">
-          I am Arteen Mohammadi, a Computing Science student based in Coquitlam, British Columbia. I like projects that make me understand systems more deeply, whether that means building secure software, debugging low-level firmware, or turning messy data into something useful.
-        </p>
+        <p class="stat-line">CS @ SFU  /  Coquitlam, BC  /  Class of 2028</p>
+        <h1>Arteen<br />Mohammadi</h1>
+        <p class="tagline">Software, security, and embedded systems work with a practical bent.</p>
         <p>
-          Lately, most of my work has fallen into three lanes: full-stack software development, cybersecurity and systems tooling, and embedded programming with STM32. I am especially interested in internships where I can keep building technical depth while working on problems that matter outside the classroom.
+          I am Arteen Mohammadi, a Computing Science student based in Coquitlam, British Columbia. I like projects that make me understand systems more deeply, whether that means building secure software, debugging low-level firmware, or turning messy data into something useful.
         </p>
         <div class="hero-actions">
           <a class="btn" href="projects.html">Browse selected work</a>
-          <a class="btn-secondary" href="Resume-2025.pdf" download>Download resume</a>
+          <a class="btn-secondary" href="Resume_2026.pdf" download>Download resume</a>
         </div>
       </div>
 
@@ -47,7 +52,7 @@
           </li>
           <li>
             <strong>Core tools</strong>
-            Python, C/C++, React, Node.js, Linux, STM32, Wazuh, SQL.
+            Python, C/C++, C#, React, Node.js, Docker, STM32, Wazuh, SQL.
           </li>
           <li>
             <strong>What I value</strong>
@@ -68,7 +73,7 @@
       <div class="text-columns">
         <div>
           <p>
-            My recent projects include a secure peer-to-peer file-sharing system, an NBA analytics platform with machine learning pipelines, an Active Directory homelab with security monitoring, a C-based packet sniffer, and an STM32 firmware project for SPI-based IMU data acquisition.
+            My recent projects include a privilege-separated network intrusion detection system that uses an LLM to triage flagged traffic, a secure peer-to-peer file-sharing system, an NBA analytics platform with machine learning pipelines, an Active Directory homelab with security monitoring, a C-based packet sniffer, and an STM32 firmware project for SPI-based IMU data acquisition.
           </p>
           <p>
             Outside of school, I work as an Aquatic Leader with the City of Coquitlam. That role has strengthened my communication, vigilance, and ability to stay composed in fast-moving situations. Those habits carry over directly into how I debug, document, and collaborate on technical work.
@@ -78,19 +83,19 @@
         <div class="skills-plain">
           <div>
             <strong>Languages</strong>
-            Python, C, C++, JavaScript, TypeScript, SQL
+            Python, C, C++, C#, JavaScript, TypeScript, SQL
           </div>
           <div>
             <strong>Frameworks & tools</strong>
-            React, Node.js, Express, Django, Git/GitHub, Linux
+            React, Node.js, Express, Django, ASP.NET Core, Docker, Git/GitHub, Linux
           </div>
           <div>
             <strong>Security & systems</strong>
-            Wazuh, Active Directory, packet analysis, STM32, SPI, UART
+            Wazuh, Active Directory, packet analysis, network intrusion detection, ONNX Runtime, STM32, SPI, UART
           </div>
           <div>
             <strong>Certifications</strong>
-            Google Cybersecurity Certificate, CompTIA Network+ (scheduled), CompTIA Security+ (scheduled)
+            Google Cybersecurity Certificate, CompTIA Network+, CompTIA Security+
           </div>
         </div>
       </div>
@@ -109,8 +114,21 @@
         <article class="project-item">
           <div>
             <div class="project-meta">
+              <h2>AI-Assisted Network Intrusion Detection System</h2>
+              <span>C#/.NET  /  ONNX Runtime  /  Docker  /  Gemini API</span>
+            </div>
+            <p class="summary">Privilege-separated intrusion detection system: real-time flow tracking with an Isolation Forest model, and an LLM-driven triage service that classifies and reports on flagged traffic.</p>
+          </div>
+          <div class="project-links">
+            <a class="project-link" href="project-details/project-aiids.html">Case study</a>
+          </div>
+        </article>
+
+        <article class="project-item">
+          <div>
+            <div class="project-meta">
               <h2>STM32 IMU Firmware</h2>
-              <span>STM32 • C • SPI • UART</span>
+              <span>STM32  /  C  /  SPI  /  UART</span>
             </div>
             <p class="summary">Embedded firmware project focused on SPI bring-up, interrupt-driven data acquisition, and live UART streaming from an ISM330DHCX IMU.</p>
           </div>
@@ -123,7 +141,7 @@
           <div>
             <div class="project-meta">
               <h2>P2P File-Sharing Application</h2>
-              <span>React • TypeScript • Node.js • WebRTC</span>
+              <span>React  /  TypeScript  /  Node.js  /  WebRTC</span>
             </div>
             <p class="summary">Secure full-stack file transfer system with encrypted communication, authentication, testing, and performance optimization for large transfers.</p>
           </div>
@@ -137,7 +155,7 @@
           <div>
             <div class="project-meta">
               <h2>HoopPredict</h2>
-              <span>Python • Django • React • Scikit-learn</span>
+              <span>Python  /  Django  /  React  /  Scikit-learn</span>
             </div>
             <p class="summary">Analytics platform with ETL pipelines, feature engineering, and machine learning workflows for NBA prediction and matchup analysis.</p>
           </div>
