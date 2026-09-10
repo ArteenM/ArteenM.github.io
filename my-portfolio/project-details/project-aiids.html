@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="AI-Assisted Network Intrusion Detection System project by Arteen Mohammadi." />
+  <title>AI-Assisted Network Intrusion Detection System | Arteen Mohammadi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../index.css" />
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title"><a href="../index.html">Arteen Mohammadi <span>Portfolio</span></a></h1>
+      <nav aria-label="Primary navigation">
+        <ul class="nav">
+          <li><a href="../index.html">About</a></li>
+          <li><a href="../projects.html" class="active">Projects</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="container">
+    <section class="project-header">
+      <div class="eyebrow">Cybersecurity and AI systems</div>
+      <h1>AI-Assisted Network Intrusion Detection System</h1>
+      <p>A two-service intrusion detection system that flags anomalous network traffic in real time and uses an LLM to triage and summarize what it finds, with the raw-traffic and secret-holding components deliberately kept apart.</p>
+      <ul class="project-meta">
+        <li>C#/.NET</li><li>ASP.NET Core</li><li>Pcap</li><li>ONNX Runtime</li><li>Docker</li><li>Gemini API</li>
+      </ul>
+    </section>
+
+    <section class="detail-grid">
+      <article>
+        <h2>What I built</h2>
+        <ul>
+          <li>Split the system into two processes on either side of a privilege boundary: a packet-capture agent with raw-socket access, and a separate, unprivileged service that holds the system's only API credential.</li>
+          <li>Built real-time network flow tracking and trained an Isolation Forest anomaly-detection model, exporting it to ONNX Runtime for inference on live traffic in roughly 5ms per flow.</li>
+          <li>Integrated the Gemini API into the triage service to automatically classify flagged-flow severity and generate incident reports from raw traffic statistics.</li>
+          <li>Developed an automated evaluation pipeline to benchmark detection behavior and latency against simulated port-scan and flood attacks (nmap, hping3) in a controlled environment.</li>
+          <li>Containerized both services with Docker, working through the elevated network capabilities live packet capture requires inside a container.</li>
+        </ul>
+
+        <h2>What I learned</h2>
+        <ul>
+          <li>How to reason about blast radius when designing a system, not just when securing an existing one — the privilege split only matters if you can explain what a compromise of either side actually costs you.</li>
+          <li>Where the real latency budget in an LLM-assisted pipeline goes: model inference is fast, and the LLM call is the part worth optimizing if this ever needed to run at higher volume.</li>
+          <li>How much container networking changes once you actually need raw packet access inside Docker, versus a typical stateless web service.</li>
+        </ul>
+      </article>
+
+      <aside>
+        <h3>Why it matters</h3>
+        <p>This is the project that pushed me past "install a monitoring tool" and into actually designing a detection system — the architecture decisions here (privilege separation, where the LLM sits in the pipeline, what gets measured) are the part I'd most want to walk someone through.</p>
+        <div class="button-row">
+          <a class="btn-secondary" href="../projects.html">Back to projects</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="copyright">© 2026 Arteen Mohammadi</div>
+    </div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>
